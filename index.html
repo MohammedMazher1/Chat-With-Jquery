@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/normalize.css" />
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <title>chat</title>
+  </head>
+  <body>
+    <span id="OpenAndClose" class="fa fa-chat">💬</span>
+    <div class="card">
+      <div class="chat">
+        <header>
+          <div class="progile-image">
+            <img src="4.ico" alt="" />
+          </div>
+          <div class="person">
+            <h4>Mohammed ‼</h4>
+            <span>today at 5:00</span>
+          </div>
+        </header>
+        <main>
+          <div class="time">
+            <span>Toady at 7:00</span>
+          </div>
+          <div class="sender">
+            <p>Hey man what,s up, Mr Aldini?🖐</p>
+          </div>
+          <div class="resever">
+            <p>Kid ehere do you came from</p>
+          </div>
+          <div class="sender">
+            <p>fieldtrip🤣</p>
+          </div>
+          <div class="resever">
+            <p>Uh, what is this gyes problem Mr: Aldini😛</p>
+          </div>
+          <div class="sender">
+            <p>Uh, he is from spce he come here to steal a</p>
+          </div>
+          <div class="resever">
+            <p>NO!</p>
+          </div>
+        </main>
+        <footer>
+          <span class="fa fa-camera"></span>
+          <span>😁</span>
+          <input
+            id="input"
+            type="text"
+            placeholder=" Type your message here..."
+          />
+          <span class="fa fa-recorder">🎙</span>
+          <span class="fa fa-send">▶</span>
+        </footer>
+      </div>
+    </div>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+      $("#OpenAndClose").click(function () {
+        $(".card").toggleClass('faidIn');
+        $(".card").slideDown(500);
+      });
+      $(".fa-send").click(function () {
+        let text = $("#input").val();
+        $("main").append(`<div class="sender">
+            <p>${text}</p>
+          </div>`);
+        $("#input").val("");
+      });
+      $('#input').keyup(function(event){
+        if(event.keyCode==13){
+          let text = $("#input").val();
+        $("main").append(`<div class="sender">
+            <p>${text}</p>
+          </div>`);
+        $("#input").val("");
+        }
+      });
+    </script>
+  </body>
+</html>
