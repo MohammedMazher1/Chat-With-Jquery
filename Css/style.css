@@ -3,8 +3,11 @@
     padding: 0;
     box-sizing: border-box;
   }
+  :root{
+    --main-color:linear-gradient(#642b73,#3a6186);
+  }
   body {
-    background-color: #eee;
+    /* background-color: #eee; */
     font-family: sans-serif;
   }
   .card{
@@ -48,7 +51,7 @@
   }
   header {
     height: 60px;
-    background-color: rgba(0, 0, 0,0.5);
+    background: var(--main-color);
     display: flex;
     border-radius: 10px 10px 0 0;
   }
@@ -67,12 +70,17 @@
    opacity: 0.8;
   }
   main {
-    background-image: url(../1696933698301.jpeg);
+    background-color: #eee;
     object-fit: cover;
     background-size: contain;
     flex-grow: 1;
     height: 400px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid rgba(228, 12, 145, 0.404);
+  }
+  main::-webkit-scrollbar{
+    display: none;
   }
   main div {
     margin: 10px ;
@@ -100,7 +108,8 @@
   }
   /* start footer style*/
   footer {
-    background-color: rgba(0, 0, 0,0.5);    padding: 15px;
+    background:var(--main-color);  
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;

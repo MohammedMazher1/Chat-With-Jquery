@@ -17,8 +17,8 @@
             <img src="4.ico" alt="" />
           </div>
           <div class="person">
-            <h4>Mohammed ‼</h4>
-            <span>today at 5:00</span>
+            <h4>Translate Chat ‼</h4>
+            <span>All Time 24h</span>
           </div>
         </header>
         <main>
@@ -26,10 +26,10 @@
             <span>Toady at 7:00</span>
           </div>
           <div class="sender">
-            <p>Hey man what,s up, Mr Aldini?🖐</p>
+            <p>Start your chat 😁</p>
           </div>
           <div class="resever">
-            <p>Kid ehere do you came from</p>
+            <p>Welcome 🖐</p>
           </div>
         </main>
         <footer>
@@ -47,26 +47,67 @@
     </div>
     <script src="jquery-3.7.1.js"></script>
     <script>
+      let words = [
+        { word: "developer", translate: "مبرمج" },
+        { word: "yes", translate: "نعم" },
+        { word: "no", translate: "لا" },
+        { word: "word", translate: "كلمة" },
+        { word: "width", translate: "العرض" },
+        { word: "height", translate: "الارتفاع" },
+        { word: "length", translate: "الطول" },
+        { word: "chat", translate: "دردشة" },
+        { word: "good", translate: "جيد" },
+        { word: "excellent", translate: "ممتاز" },
+      ];
+
       $("#OpenAndClose").click(function () {
-        $(".card").toggleClass('faidIn');
+        $(".card").toggleClass("faidIn");
         $(".card").slideDown(500);
       });
       $(".fa-send").click(function () {
-        let text = $("#input").val();
-        $("main").append(`<div class="sender">
+        let text = $("#input").val().toLowerCase();
+          $("main").append(`<div class="sender">
             <p>${text}</p>
           </div>`);
-        $("#input").val("");
+          $("#input").val("");
+          $("main").scrollTop($("main").prop("scrollHeight"));
+          for (let i = 0; i < words.length; i++) {
+            if (words[i].word == text) {
+              setTimeout(() => {
+                $("main").append(`<div class="resever">
+                  <p>${words[i].translate}</p>
+                  </div>`);
+                  $("main").scrollTop($("main").prop("scrollHeight"));
+              },800);
+            }
+          }
       });
-      $('#input').keyup(function(event){
-        if(event.keyCode==13){
-          let text = $("#input").val();
-        $("main").append(`<div class="sender">
+      $("#input").keyup(function (event) {
+        if (event.keyCode == 13) {
+          let text = $("#input").val().toLowerCase();
+          $("main").append(`<div class="sender">
             <p>${text}</p>
           </div>`);
-        $("#input").val("");
+          $("#input").val("");
+          $("main").scrollTop($("main").prop("scrollHeight"));
+          for (let i = 0; i < words.length; i++) {
+            if (words[i].word == text) {
+              setTimeout(() => {
+                $("main").append(`<div class="resever">
+                  <p>${words[i].translate}</p>
+                  </div>`);
+                  $("main").scrollTop($("main").prop("scrollHeight"));
+              },800);
+            }
+          }
         }
       });
+      function scrollMain() {
+        // let main = document.getElementsByTagName("main")[0];
+        // main.scrollTo({
+        //   top: main.clientHeight,
+        // });
+      }
     </script>
   </body>
 </html>
