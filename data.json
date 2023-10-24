@@ -1,0 +1,428 @@
+[
+    {
+      "word": "design",
+      "translation": "تصميم"
+    },
+    {
+      "word": "database",
+      "translation": "قاعدة البيانات"
+    },
+    {
+      "word": "programming",
+      "translation": "برمجة"
+    },
+    {
+      "word": "algorithm",
+      "translation": "خوارزمية"
+    },
+    { "word": "yes", 
+    "translation": "نعم" 
+    },
+    {
+       "word": "no",
+     "translation": "لا" 
+    },
+    { 
+      "word": "word", "translation": "كلمة" },
+    {
+       "word": "width", 
+       "translation": "العرض" 
+      },
+    { 
+      "word": "height", 
+      "translation": "الارتفاع" 
+    },
+    {
+       "word": "length",
+        "translation": "الطول"
+       },
+    {
+       "word": "chat", 
+       "translation": "دردشة" 
+      },
+    { 
+      "word": "good", 
+      "translation": "جيد" 
+    },
+    { 
+      "word": "excellent",
+       "translation": "ممتاز"
+       },
+      {
+        "word": "developer",
+        "translation": "مطور"
+      },
+      {
+        "word": "design",
+        "translation": "تصميم"
+      },
+      {
+        "word": "database",
+        "translation": "قاعدة البيانات"
+      },
+      {
+        "word": "programming",
+        "translation": "برمجة"
+      },
+      {
+        "word": "algorithm",
+        "translation": "خوارزمية"
+      },
+      {
+        "word": "application",
+        "translation": "تطبيق"
+      },
+      {
+        "word": "network",
+        "translation": "شبكة"
+      },
+      {
+        "word": "security",
+        "translation": "أمان"
+      },
+      {
+        "word": "framework",
+        "translation": "إطار عمل"
+      },
+      {
+        "word": "testing",
+        "translation": "اختبار"
+      },
+      {
+        "word": "debugging",
+        "translation": "تصحيح"
+      },
+      {
+        "word": "interface",
+        "translation": "واجهة"
+      },
+      {
+        "word": "server",
+        "translation": "خادم"
+      },
+      {
+        "word": "client",
+        "translation": "عميل"
+      },
+      {
+        "word": "responsive",
+        "translation": "متجاوب"
+      },
+      {
+        "word": "mobile",
+        "translation": "محمول"
+      },
+      {
+        "word": "web",
+        "translation": "ويب"
+      },
+      {
+        "word": "cloud",
+        "translation": "سحابة"
+      },
+      {
+        "word": "user",
+        "translation": "مستخدم"
+      },
+      {
+        "word": "interface",
+        "translation": "واجهة"
+      },
+      {
+        "word": "code",
+        "translation": "كود"
+      },
+      {
+        "word": "syntax",
+        "translation": "صيغة"
+      },
+      {
+        "word": "variable",
+        "translation": "متغير"
+      },
+      {
+        "word": "function",
+        "translation": "دالة"
+      },
+      {
+        "word": "class",
+        "translation": "صنف"
+      },
+      {
+        "word": "object",
+        "translation": "كائن"
+      },
+      {
+        "word": "array",
+        "translation": "مصفوفة"
+      },
+      {
+        "word": "loop",
+        "translation": "حلقة"
+      },
+      {
+        "word": "conditional",
+        "translation": "شرطي"
+      },
+      {
+        "word": "statement",
+        "translation": "عبارة"
+      },
+      {
+        "word": "algorithm",
+        "translation": "خوارزمية"
+      },
+      {
+        "word": "data",
+        "translation": "بيانات"
+      },
+      {
+        "word": "structure",
+        "translation": "هيكل"
+      },
+      {
+        "word": "variable",
+        "translation": "متغير"
+      },
+      {
+        "word": "constant",
+        "translation": "ثابت"
+      },
+      {
+        "word": "integer",
+        "translation": "عدد صحيح"
+      },
+      {
+        "word": "float",
+        "translation": "عدد عشري"
+      },
+      {
+        "word": "string",
+        "translation": "نص"
+      },
+      {
+        "word": "boolean",
+        "translation": "منطقي"
+      },
+      {
+        "word": "input",
+        "translation": "إدخال"
+      },
+      {
+        "word": "output",
+        "translation": "إخراج"
+      },
+      {
+        "word": "print",
+        "translation": "طباعة"
+      },
+      {
+        "word": "file",
+        "translation": "ملف"
+      },
+      {
+        "word": "directory",
+        "translation": "دليل"
+      },
+      {
+        "word": "error",
+        "translation": "خطأ"
+      },
+      {
+        "word": "exception",
+        "translation": "استثناء"
+      },
+      {
+        "word": "debug",
+        "translation": "تصحيح"
+      },
+      {
+        "word": "design",
+        "translation": "تصميم"
+      },
+      {
+        "word": "database",
+        "translation": "قاعدة البيانات"
+      },
+      {
+        "word": "programming",
+        "translation": "برمجة"
+      },
+      {
+        "word": "algorithm",
+        "translation": "خوارزمية"
+      },
+      {
+        "word": "application",
+        "translation": "تطبيق"
+      },
+      {
+        "word": "network",
+        "translation": "شبكة"
+      },
+      {
+        "word": "security",
+        "translation": "أمان"
+      },
+      {
+        "word": "framework",
+        "translation": "إطار عمل"
+      },
+      {
+        "word": "testing",
+        "translation": "اختبار"
+      },
+      {
+        "word": "debugging",
+        "translation": "تصحيح"
+      },
+      {
+        "word": "interface",
+        "translation": "واجهة"
+      },
+      {
+        "word": "server",
+        "translation": "خادم"
+      },
+      {
+        "word": "client",
+        "translation": "عميل"
+      },
+      {
+        "word": "responsive",
+        "translation": "متجاوب"
+      },
+      {
+        "word": "mobile",
+        "translation": "محمول"
+      },
+      {
+        "word": "web",
+        "translation": "ويب"
+      },
+      {
+        "word": "cloud",
+        "translation": "سحابة"
+      },
+      {
+        "word": "user",
+        "translation": "مستخدم"
+      },
+      {
+        "word": "interface",
+        "translation": "واجهة"
+      },
+      {
+        "word": "code",
+        "translation": "كود"
+      },
+      {
+        "word": "syntax",
+        "translation": "صيغة"
+      },
+      {
+        "word": "variable",
+        "translation": "متغير"
+      },
+      {
+        "word": "function",
+        "translation": "دالة"
+      },
+      {
+        "word": "class",
+        "translation": "صنف"
+      },
+      {
+        "word": "object",
+        "translation": "كائن"
+      },
+      {
+        "word": "array",
+        "translation": "مصفوفة"
+      },
+      {
+        "word": "loop",
+        "translation": "حلقة"
+      },
+      {
+        "word": "conditional",
+        "translation": "شرطي"
+      },
+      {
+        "word": "statement",
+        "translation": "عبارة"
+      },
+      {
+        "word": "algorithm",
+        "translation": "خوارزمية"
+      },
+      {
+        "word": "data",
+        "translation": "بيانات"
+      },
+      {
+        "word": "structure",
+        "translation": "هيكل"
+      },
+      {
+        "word": "variable",
+        "translation": "متغير"
+      },
+      {
+        "word": "constant",
+        "translation": "ثابت"
+      },
+      {
+        "word": "integer",
+        "translation": "عدد صحيح"
+      },
+      {
+        "word": "float",
+        "translation": "عدد عشري"
+      },
+      {
+        "word": "string",
+        "translation": "نص"
+      },
+      {
+        "word": "boolean",
+        "translation": "منطقي"
+      },
+      {
+        "word": "input",
+        "translation": "إدخال"
+      },
+      {
+        "word": "output",
+        "translation": "إخراج"
+      },
+      {
+        "word": "print",
+        "translation": "طباعة"
+      },
+      {
+        "word": "file",
+        "translation": "ملف"
+      },
+      {
+        "word": "directory",
+        "translation": "دليل"
+      },
+      {
+        "word": "error",
+        "translation": "خطأ"
+      },
+      {
+        "word": "exception",
+        "translation": "استثناء"
+      },
+      {
+        "word": "debug",
+        "translation": "تصحيح"
+      },
+      {
+        "word": "logging",
+        "translation": "تسجيل"
+      }
+    
+  ]

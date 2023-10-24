@@ -47,20 +47,22 @@
     </div>
     <script src="jquery-3.7.1.js"></script>
     <script>
-      let words = [
-        { word: "developer", translate: "مبرمج" },
-        { word: "yes", translate: "نعم" },
-        { word: "no", translate: "لا" },
-        { word: "word", translate: "كلمة" },
-        { word: "width", translate: "العرض" },
-        { word: "height", translate: "الارتفاع" },
-        { word: "length", translate: "الطول" },
-        { word: "chat", translate: "دردشة" },
-        { word: "good", translate: "جيد" },
-        { word: "excellent", translate: "ممتاز" },
-      ];
+      // let words = [
+      //   { word: "developer", translate: "مبرمج" },
+      //   { word: "yes", translate: "نعم" },
+      //   { word: "no", translate: "لا" },
+      //   { word: "word", translate: "كلمة" },
+      //   { word: "width", translate: "العرض" },
+      //   { word: "height", translate: "الارتفاع" },
+      //   { word: "length", translate: "الطول" },
+      //   { word: "chat", translate: "دردشة" },
+      //   { word: "good", translate: "جيد" },
+      //   { word: "excellent", translate: "ممتاز" },
+      // ];
 
-      $("#OpenAndClose").click(function () {
+      fetch('data.json').then(response => response.json())
+      .then(data =>{
+        $("#OpenAndClose").click(function () {
         $(".card").toggleClass("faidIn");
         $(".card").slideDown(500);
       });
@@ -71,11 +73,11 @@
           </div>`);
           $("#input").val("");
           $("main").scrollTop($("main").prop("scrollHeight"));
-          for (let i = 0; i < words.length; i++) {
-            if (words[i].word == text) {
+          for (let i = 0; i < data.length; i++) {
+            if (data[i].word == text) {
               setTimeout(() => {
                 $("main").append(`<div class="resever">
-                  <p>${words[i].translate}</p>
+                  <p>${data[i].translation}</p>
                   </div>`);
                   $("main").scrollTop($("main").prop("scrollHeight"));
               },800);
@@ -84,17 +86,19 @@
       });
       $("#input").keyup(function (event) {
         if (event.keyCode == 13) {
-          let text = $("#input").val().toLowerCase();
+          const inputText = $("#input").val().toLowerCase();
+          const text = inputText.trim();
+          
           $("main").append(`<div class="sender">
             <p>${text}</p>
           </div>`);
           $("#input").val("");
           $("main").scrollTop($("main").prop("scrollHeight"));
-          for (let i = 0; i < words.length; i++) {
-            if (words[i].word == text) {
+          for (let i = 0; i < data.length; i++) {
+            if (data[i].word == text) {
               setTimeout(() => {
                 $("main").append(`<div class="resever">
-                  <p>${words[i].translate}</p>
+                  <p>${data[i].translation}</p>
                   </div>`);
                   $("main").scrollTop($("main").prop("scrollHeight"));
               },800);
@@ -102,12 +106,9 @@
           }
         }
       });
-      function scrollMain() {
-        // let main = document.getElementsByTagName("main")[0];
-        // main.scrollTo({
-        //   top: main.clientHeight,
-        // });
-      }
+      });
+   
+
     </script>
   </body>
 </html>
