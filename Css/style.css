@@ -119,10 +119,11 @@
     justify-content: space-between;
     align-items: center;
     border-bottom-left-radius: 10px;
-    font-size: 20px;
   }
   footer span{
     display: block;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.76)
   }
   footer input{
     border-radius: 10px;

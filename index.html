@@ -41,25 +41,12 @@
             placeholder=" Type your message here..."
           />
           <span class="fa fa-recorder">🎙</span>
-          <i class="fa-solid fa-share"></i>
+          <span class="fa-solid fa-share"></span>
         </footer>
       </div>
     </div>
     <script src="jquery-3.7.1.js"></script>
     <script>
-      // let words = [
-      //   { word: "developer", translate: "مبرمج" },
-      //   { word: "yes", translate: "نعم" },
-      //   { word: "no", translate: "لا" },
-      //   { word: "word", translate: "كلمة" },
-      //   { word: "width", translate: "العرض" },
-      //   { word: "height", translate: "الارتفاع" },
-      //   { word: "length", translate: "الطول" },
-      //   { word: "chat", translate: "دردشة" },
-      //   { word: "good", translate: "جيد" },
-      //   { word: "excellent", translate: "ممتاز" },
-      // ];
-
       fetch('data.json').then(response => response.json())
       .then(data =>{
         $("#OpenAndClose").click(function () {
@@ -67,7 +54,8 @@
         $(".card").slideDown(500);
       });
       $(".fa-share").click(function () {
-        let text = $("#input").val().toLowerCase();
+        const inputText = $("#input").val().toLowerCase();
+        const text = inputText.trim();
           $("main").append(`<div class="sender">
             <p>${text}</p>
           </div>`);
