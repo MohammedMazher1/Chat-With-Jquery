@@ -41,7 +41,7 @@
             placeholder=" Type your message here..."
           />
           <span class="fa fa-recorder">🎙</span>
-          <span class="fa fa-send">▶</span>
+          <i class="fa-solid fa-share"></i>
         </footer>
       </div>
     </div>
@@ -66,7 +66,7 @@
         $(".card").toggleClass("faidIn");
         $(".card").slideDown(500);
       });
-      $(".fa-send").click(function () {
+      $(".fa-share").click(function () {
         let text = $("#input").val().toLowerCase();
           $("main").append(`<div class="sender">
             <p>${text}</p>
