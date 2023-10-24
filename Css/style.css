@@ -13,16 +13,19 @@
   .card{
     border-radius: 10px;
     position: absolute;
-    bottom: 25px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* bottom: 25px;
     right: 25px ; 
-    display: none;  
+    display: none;   */
     overflow: hidden;
-    transition: all 0.5s;
+    /* transition: all 0.5s;
     animation-name: faidIn;
-    animation-duration: 0.5s;
+    animation-duration: 0.5s; */
     
   }
-  @keyframes faidIn{
+  /* @keyframes faidIn{
     0%{
       height: 0px;
       width: 0px;
@@ -39,7 +42,7 @@
       height: 480px;
       width: 300px;
     }
-  }
+  } */
  
   .frind h6{
     opacity: 0.7;
